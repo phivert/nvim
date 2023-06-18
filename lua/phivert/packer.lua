@@ -50,6 +50,7 @@ return require('packer').startup(function(use)
           vim.cmd('colorscheme github_dark')
       end
   })
+--[[
   use({
       'rose-pine/neovim',
       as = 'rose-pine',
@@ -57,6 +58,18 @@ return require('packer').startup(function(use)
           vim.cmd('colorscheme rose-pine')
       end
   })
+((]]
+use {
+	"lukas-reineke/indent-blankline.nvim",
+	config = function()
+		opts = {}
+		-- Other blankline configuration here
+		require("indent_blankline").setup(require("indent-rainbowline").make_opts(opts))
+	end,
+	requires = {
+		"TheGLander/indent-rainbowline.nvim",
+	},
+}
   use {
       'nvim-treesitter/nvim-treesitter',
       run = function()

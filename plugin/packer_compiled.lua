@@ -95,6 +95,17 @@ _G.packer_plugins = {
     path = "/home/phivert/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["indent-blankline.nvim"] = {
+    config = { "\27LJ\2\2€\1\0\0\3\0\6\0\0144\0\0\0007\0\0\0006\0\1\0'\1\2\0B\0\2\0029\0\3\0006\1\1\0'\2\4\0B\1\2\0029\1\5\0016\2\0\0B\1\2\0A\0\0\1K\0\1\0\14make_opts\23indent-rainbowline\nsetup\21indent_blankline\frequire\topts\0" },
+    loaded = true,
+    path = "/home/phivert/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["indent-rainbowline.nvim"] = {
+    loaded = true,
+    path = "/home/phivert/.local/share/nvim/site/pack/packer/start/indent-rainbowline.nvim",
+    url = "https://github.com/TheGLander/indent-rainbowline.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/phivert/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -185,12 +196,6 @@ _G.packer_plugins = {
     path = "/home/phivert/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/phivert/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope-dap.nvim"] = {
     loaded = true,
     path = "/home/phivert/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
@@ -218,10 +223,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for github-nvim-theme]], true)
 try_loadstring("\27LJ\2\2n\0\0\2\0\6\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\0016\0\3\0009\0\4\0'\1\5\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
 time([[Config for github-nvim-theme]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+try_loadstring("\27LJ\2\2€\1\0\0\3\0\6\0\0144\0\0\0007\0\0\0006\0\1\0'\1\2\0B\0\2\0029\0\3\0006\1\1\0'\2\4\0B\1\2\0029\1\5\0016\2\0\0B\1\2\0A\0\0\1K\0\1\0\14make_opts\23indent-rainbowline\nsetup\21indent_blankline\frequire\topts\0", "config", "indent-blankline.nvim")
+time([[Config for indent-blankline.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
