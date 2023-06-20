@@ -17,7 +17,7 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
-vim.optupdatetime = 50
+vim.opt.updatetime = 50
 
 vim.opt.wrap = true
 vim.opt.scrolloff = 8

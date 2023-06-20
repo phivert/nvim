@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>ee", vim.cmd.NvimTreeToggle)
 
 vim.keymap.set({"n", "t"}, "²", function () require("nvterm.terminal").toggle('horizontal') end)
 
-vim.keymap.set("n", "<C-t>", vim.cmd.tabnew)
+vim.keymap.set("n", "<leader>t", vim.cmd.tabnew)
 vim.keymap.set("n", "<S-t>", vim.cmd.tabc)
 vim.keymap.set("n", "<Tab>", vim.cmd.tabnext)
 
