@@ -1,3 +1,4 @@
-require("phivert.opt")
-require("phivert.set")
-require("phivert.packer")
+require('phivert.packer')
+require('phivert.config')
+require('phivert.options')
+require('phivert.keymaps')
