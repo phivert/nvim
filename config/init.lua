@@ -1,7 +1,0 @@
-require('phivert.config.nvimtree')
-require('phivert.config.treesitter')
-require('phivert.config.lsp_zero')
-require('phivert.config.theme')
-require('phivert.config.dap')
-require('phivert.config.nvimterm')
-require('phivert.config.neodev')
