@@ -1,0 +1,8 @@
+require("phivert.plugin.treesitter")
+require("phivert.plugin.lsp-zero")
+require("phivert.plugin.dap")
+require("phivert.plugin.nvimtree")
+require("phivert.plugin.autopairs")
+require("phivert.plugin.indent")
+require("phivert.plugin.theme")
+require("phivert.plugin.tmux")
