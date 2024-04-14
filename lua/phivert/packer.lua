@@ -43,7 +43,8 @@ print("sd")
     "rcarriga/nvim-dap-ui",
     requires = "mfussenegger/nvim-dap"
     }
-  use "mfussenegger/nvim-dap-python" --- python dap
+	use { "nvim-neotest/nvim-nio" }
+	use "mfussenegger/nvim-dap-python" --- python dap
 
   if packer_bootstrap then
     require('packer').sync()
