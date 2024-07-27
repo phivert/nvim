@@ -1,1 +1,1 @@
-require('dap-python').setup('/home/phivert/.venv/dap/bin/python')
+require('dap-python').setup('/home/paul/.venv/dap/bin/python3')

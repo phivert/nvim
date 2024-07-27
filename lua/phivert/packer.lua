@@ -20,8 +20,8 @@ return require('packer').startup(function(use)
   use "projekt0n/github-nvim-theme" ---- theme
   use "windwp/nvim-autopairs" ---- auto pairs
 	use "lukas-reineke/indent-blankline.nvim" ---- indent tracker
-print("sd")
- 	use "aserowy/tmux.nvim" --- tmux 
+	use "aserowy/tmux.nvim" --- tmux
+	use "zbirenbaum/nvterm"
 	use { 
     --- lsp zero
     'VonHeikemen/lsp-zero.nvim',

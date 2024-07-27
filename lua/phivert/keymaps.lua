@@ -22,13 +22,14 @@ vim.keymap.set("n", "<leader>ee", vim.cmd.NvimTreeToggle)
 
 ---- terminal ----
 
---- vim.keymap.set({"n", "t"}, "²", function () require("nvterm.terminal").toggle('horizontal') end)
+vim.keymap.set({"n", "t"}, "²", function () require("nvterm.terminal").toggle('horizontal') end)
 
 ---- dap configuration ----
 
+vim.keymap.set("n", "<F2>", function() require'dap'.close() end)
 vim.keymap.set("n", "<F5>", function() require'dap'.continue() end)
 vim.keymap.set("n", "<F10>", function() require'dap'.step_over() end)
-vim.keymap.set("n", "<F11>", function() require'dap'.step_into() end)
+vim.keymap.set("n", "<F6>", function() require'dap'.step_into() end)
 vim.keymap.set("n", "<F12>", function() require'dap'.step_out() end)
 vim.keymap.set("n", "<leader>b", function() require'dap'.toggle_breakpoint() end)
 vim.keymap.set("n", "<F1>", function() require'dapui'.toggle() end)
