@@ -24,6 +24,10 @@ vim.keymap.set("n", "<leader>ee", vim.cmd.NvimTreeToggle)
 
 vim.keymap.set({"n", "t"}, "²", function () require("nvterm.terminal").toggle('horizontal') end)
 
+---- undo tree ----
+
+vim.keymap.set('n', '<leader>zz', vim.cmd.UndotreeToggle)
+
 ---- dap configuration ----
 
 vim.keymap.set("n", "<F2>", function() require'dap'.close() end)

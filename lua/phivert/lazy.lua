@@ -46,6 +46,10 @@ require('lazy').setup({
     		main = "ibl",
     		---@module "ibl"
 	},
+	-- undo tree
+	{
+		"mbbill/undotree",
+	},
 	-- terminal (nvterm)
 	{
 		"NvChad/nvterm",
