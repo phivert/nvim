@@ -1,4 +1,4 @@
-require("phivert.packer")
-require("phivert.plugin")
-require("phivert.options")
-require("phivert.keymaps")
+require('phivert.lazy')
+require('phivert.plugins')
+require('phivert.options')
+require('phivert.keymaps')

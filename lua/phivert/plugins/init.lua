@@ -1,0 +1,7 @@
+require("phivert.plugins.treesitter")
+require("phivert.plugins.theme")
+require("phivert.plugins.autopairs")
+require("phivert.plugins.texplorer")
+require("phivert.plugins.ibl")
+require("phivert.plugins.nvterm")
+require("phivert.plugins.manson")
