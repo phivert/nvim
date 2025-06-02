@@ -28,6 +28,10 @@ vim.keymap.set({"n", "t"}, "²", function () require("nvterm.terminal").toggle('
 
 vim.keymap.set('n', '<leader>zz', vim.cmd.UndotreeToggle)
 
+---- lsp -----
+
+vim.keymap.set('n', '<leader>&', vim.diagnostic.open_float)
+
 ---- dap configuration ----
 
 vim.keymap.set("n", "<F2>", function() require'dap'.close() end)
