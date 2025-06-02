@@ -44,7 +44,7 @@ require('lazy').setup({
 	{
     		"lukas-reineke/indent-blankline.nvim",
     		main = "ibl",
-    		---@module "ibl"
+    		---@module "ibl":
 	},
 	-- undo tree
 	{
@@ -58,21 +58,14 @@ require('lazy').setup({
     {
         "mason-org/mason-lspconfig.nvim",
         dependencies = {
-            { "mason-org/mason.nvim", opts = {} },
-            "neovim/nvim-lspconfig"
+            {"mason-org/mason.nvim", opts = {}},
+            "neovim/nvim-lspconfig",
         },
     },
 	-- dap + ui (dapui)	
-	{
-		"rcarriga/nvim-dap-ui",
-		dependencies = "mfussenegger/nvim-dap"
-	},
-		{
-			"nvim-neotest/nvim-nio"
-		},
-		{
-			"mfussenegger/nvim-dap-python"
-		}
+	{"rcarriga/nvim-dap-ui", dependencies = "mfussenegger/nvim-dap"},
+		{"nvim-neotest/nvim-nio"},
+		{"mfussenegger/nvim-dap-python"}
 
 })
 
