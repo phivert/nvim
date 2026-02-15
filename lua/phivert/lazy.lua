@@ -63,6 +63,18 @@ require('lazy').setup({
 
         },
     },
+	-- mason-nvim-dap (auto-install DAP adapters)
+	{
+		"jay-babu/mason-nvim-dap.nvim",
+		dependencies = {
+			"mason-org/mason.nvim",
+			"mfussenegger/nvim-dap",
+		},
+		opts = {
+			ensure_installed = { "node2", "python", "bash" },
+			automatic_installation = true,
+		},
+	},
     -- cmp
     {
         'hrsh7th/nvim-cmp',

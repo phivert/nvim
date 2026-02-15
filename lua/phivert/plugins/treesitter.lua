@@ -3,6 +3,8 @@ require'nvim-treesitter.configs'.setup {
     ensure_installed = {
         "vimdoc",
         "javascript",
+        "typescript",
+        "tsx",
         "python",
         "c",
         "lua",
