@@ -1,3 +1,4 @@
+require("phivert.plugins.mason")
 require("phivert.plugins.treesitter")
 require("phivert.plugins.theme")
 require("phivert.plugins.autopairs")

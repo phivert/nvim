@@ -128,3 +128,17 @@ lspconfig.ts_ls.setup({
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact", "javascript.jsx" },
 })
+
+-- PHP LSP (Intelephense)
+lspconfig.intelephense.setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  settings = {
+    intelephense = {
+      -- Add any specific configurations here
+      files = {
+        maxSize = 5000000,
+      },
+    },
+  },
+})
