@@ -7,16 +7,16 @@ dap.adapters.node = {
     command = 'node',
     args = {
         -- We pass the path to the script as an argument to node
-        vim.fn.stdpath('data') .. '/mason/packages/node-debug2-adapter/out/src/nodeDebug.js'
+        vim.fn.stdpath('data') .. '/mason/packages/js-debug-adapter/out/src/vsDebugServer.js'
     },
-    name = 'node-debug2'
+    name = 'js-debug-adapter'
 }
 -- JavaScript/TypeScript debug configuration
 dap.configurations.javascript = {
     {
         type = 'node',
         request = 'launch',
-        program = '${workspaceFolder}/${file}',
+        program = '${file}',
         skipFiles = { '<node_internals>/**' },
         console = 'integratedTerminal',
         internalConsoleOptions = 'neverOpen',
@@ -40,5 +40,6 @@ dap.configurations.javascript = {
 }
 
 -- TypeScript shares the same configurations as JavaScript
+dap.configurations.javascriptreact = dap.configurations.javascript
 dap.configurations.typescript = dap.configurations.javascript
 dap.configurations.typescriptreact = dap.configurations.javascript
